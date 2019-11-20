@@ -1,5 +1,5 @@
 #metadataBlock	name	dataverseAlias	displayName												
-	easy-metadata		Electronic Archiving SYstem – DANS Custom Metadata												
+	easy-metadata		Electronic Archiving SYstem - DANS Custom Metadata												
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
 	easy-pno	People & organisations	People & organisations		none	1				TRUE		TRUE			easy-metadata
 	easy-pno-role	Role	Role		text	2		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	easy-pno	easy-metadata
