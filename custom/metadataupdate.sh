@@ -7,6 +7,6 @@ IFS=' '
 for DIR in $CUSTOM ;
         do echo $DIR ;
         data=$(curl -s $DIR --output /tmp/data.tsv)
-        curl -X POST http://localhost:8080/api/admin/datasetfield/load -X POST --data-binary @/tmp/data.tsv -H "Content-type: text/tab-separated-values"
+        curl -X POST http://${DATAVERSE_SERVICE_HOST}:${DATAVERSE_SERVICE_PORT_HTTP}/api/admin/datasetfield/load -X POST --data-binary @/tmp/data.tsv -H "Content-type: text/tab-separated-values"
 done
 IFS=$old
