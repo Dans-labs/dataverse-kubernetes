@@ -33,6 +33,8 @@ spec:
           env:
             - name: SOLR_PORT  # Otherwise, this is wrongfully set by K8s.
               value: "8983"
+            - name: SOLR_JAVA_MEM
+              value: "-Xms24g -Xmx24g"
           readinessProbe:
             httpGet:
               path: /solr/collection1/admin/ping
